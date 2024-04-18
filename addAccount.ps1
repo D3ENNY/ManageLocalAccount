@@ -2,7 +2,7 @@
 # $Name = Read-Host "Insert account's name"
 # $Desc = Read-Host "Insert account's description"
 
-$Password = "Concorso2024!!!"
+$Password = "Concorso2024!!!" | ConvertTo-SecureString -AsPlainText -Force
 $Name = "concorso"
 $Desc = "account concorso 2024"
 $params = @{
